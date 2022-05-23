@@ -1,0 +1,35 @@
+.footer {
+    grid-area: footer;
+}
+
+footer {
+    background-image: url('/imagenes/footer.jpg');
+    background-size: cover;
+}
+
+.footer h3 {
+    color: orangered;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.contacto {
+   font-style: italic;
+   color: orange;
+   font-weight: bold;
+   font-size: 40px;
+}
+
+ul {
+    list-style: none; 
+      li {
+          display: flex;
+          justify-content: space-between;
+          font-size:20px;
+           a {
+               text-decoration: none;
+               color:orange;
+               font-weight: bold;
+          }
+    }
+}

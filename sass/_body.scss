@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+   
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+// Uso de Grid
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 200px 560px 180px;
+    grid-template-areas: 
+     "header"
+     "section"
+     "footer";  
+}
+
+// Uso de MediasQueries
+
+@media (min-width:600px) {
+    .grid-container {
+        grid-template-rows: 270px;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";  
+    }
+}
+
+@media (max-width:600px) {
+    .grid-container {
+        grid-template-rows: 270px;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";  
+    }
+}
+
+

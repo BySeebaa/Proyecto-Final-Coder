@@ -1,0 +1,11 @@
+@mixin arreglos {
+    color: gainsboro;
+    font-size: 53px;
+    font-weight: bold;
+   
+}
+
+header h1 {
+    @include arreglos
+}
+

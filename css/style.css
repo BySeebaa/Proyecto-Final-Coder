@@ -1,0 +1,199 @@
+.header {
+  grid-area: header;
+}
+
+h1 {
+  font-family: "Smooch", cursive;
+}
+
+header {
+  background-image: url("/imagenes/corchos-para-decorar.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  grid-area: section;
+}
+
+section {
+  background-image: url("/imagenes/fuente.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+}
+section h2 {
+  color: bisque;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card {
+  width: 300px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.container .card h4 {
+  font-weight: 0 1rem;
+  font-size: 16px;
+  font-weight: 300px;
+  color: black;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.container .card .parrafo {
+  color: black;
+}
+
+.mb-3 {
+  margin: 50px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.form-label {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: orange;
+}
+
+.link {
+  font-size: 50px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+footer {
+  background-image: url("/imagenes/footer.jpg");
+  background-size: cover;
+}
+
+.footer h3 {
+  color: orangered;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.contacto {
+  font-style: italic;
+  color: orange;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 200px 560px 180px;
+  grid-template-areas: "header" "section" "footer";
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-rows: 270px;
+    grid-template-areas: "header" "section" "footer";
+  }
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-rows: 270px;
+    grid-template-areas: "header" "section" "footer";
+  }
+}
+.link {
+  text-decoration: none;
+  color: red;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.color {
+  font-size: 30px;
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.colores {
+  font-size: 22px;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+header h1 {
+  color: gainsboro;
+  font-size: 53px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
